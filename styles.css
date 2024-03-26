@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+
+    background-color: rgb(11, 117, 7);
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 500px 90px;
+    color: aliceblue;
+    /*justify-content: center;*/
+    /*
+    height: 800px;
+    align-content: center; */
+}
+.container div{
+    border: 2px solid white;
+
+}  
+
+.menu{
+    color: white;
+    background-color: #04AA6D;
+    padding: 14px 16px;
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+.item1{
+    background-color: #04AA6D;
+}
+.item2{
+    background-color: #31d196;
+}
+.item3{
+    background-color: #55c29a;
+    grid-column: 1 / 3;
+}
+
+.footer{
+    background-color: #302a2a;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.item2 img {
+    margin: 3px;
+    vertical-align: middle;
+    width: auto;
+    height: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .container div {
+        border: none;
+    }
+    .item1{
+        background-color: #04AA6D;
+
+    }
+    .item2{
+        background-color: #31d196;
+        grid-column: 1 / 3;
+    }
+    .item3{
+        background-color: #55c29a;
+    
+  
+    }
+    .item2 img {
+        vertical-align: middle;
+        width: 95%;
+        height: auto;
+    }
+}
+
+
+
+
+  
+  /*
+  // COSA PARA SALTAR LAS COSAS COMO POPUP LOL
+    .item2 img:hover {
+        transform: scale(1.1);
+    }
+@media screen and (max-width: 768px) {
+    .img1 {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .img1 {
+        width: 20vw;
+        height: 20vh;
+    }
+}
+*/
